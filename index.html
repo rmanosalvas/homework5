@@ -21,107 +21,81 @@
     <p class="lead">A simple calendar app for scheduling your work day</p>
     <p id="currentDay" class="lead"></p>
   </header>
-  <div class="container">
+
     <!-- Timeblocks go here -->
-    <div class="row">
-      <div class="col-2 time-block hour">8am</div>
-      <div class="col-9">
-        <input type="text" id="8" class="form-control"  placeholder="To do">
+    <div class="container">
+      
+      <div id="hour9" class="row time-block">
+        <div class="col-sm-1 hour">9am</div>
+        <textarea class="col-sm-10 description"></textarea>
+        <button class="btn saveBtn col-sm-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="col-1">
-        <button class="saveBtn">Save</button>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-2 time-block hour">9am</div>
-      <div class="col-9">
-        <input type="text" id="9" class="form-control"  placeholder="To do">
+      <div id="hour10" class="row time-block">
+        <div class="col-sm-1 hour">10am</div>
+        <textarea class="col-sm-10 description"></textarea>
+        <button class="btn saveBtn col-sm-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="col-1">
-        <button class="saveBtn">Save</button>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-2 time-block hour">10am</div>
-      <div class="col-9">
-        <input type="text" id="10" class="form-control"  placeholder="To do">
+      <div id="hour11" class="row time-block">
+        <div class="col-sm-1 hour">9am</div>
+        <textarea class="col-sm-10 description"></textarea>
+        <button class="btn saveBtn col-sm-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="col-1">
-        <button class="saveBtn">Save</button>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-2 time-block hour" >11am</div>
-      <div class="col-9">
-        <input type="text" id="11" class="form-control"  placeholder="To do">
+      <div id="hour12" class="row time-block">
+        <div class="col-sm-1 hour">12pm</div>
+        <textarea class="col-sm-10 description"></textarea>
+        <button class="btn saveBtn col-sm-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="col-1">
-        <button class="saveBtn">Save</button>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-2 time-block hour">12pm</div>
-      <div class="col-9">
-        <input type="text" id="12" class="form-control"  placeholder="To do">
+      <div id="hour1" class="row time-block">
+        <div class="col-sm-1 hour">1pm</div>
+        <textarea class="col-sm-10 description"></textarea>
+        <button class="btn saveBtn col-sm-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="col-1">
-        <button class="saveBtn">Save</button>
-      </div>
-    </div>
-    <div class="row" id="2">
-      <div class="col-2 time-block hour">1pm</div>
-      <div class="col-9">
-        <input type="text" id="1" class="form-control"  placeholder="To do">
-      </div>
-      <div class="col-1">
-        <button class="saveBtn">Save</button>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-2 time-block hour">2pm</div>
-      <div class="col-9">
-        <input type="text" id="2" class="form-control"  placeholder="To do">
+      <div id="hour2" class="row time-block">
+        <div class="col-sm-1 hour">2pm</div>
+        <textarea class="col-sm-10 description"></textarea>
+        <button class="btn saveBtn col-sm-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="col-1">
-        <button class="saveBtn">Save</button>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-2 time-block hour">3pm</div>
-      <div class="col-9">
-        <input type="text" id="3" class="form-control"  placeholder="To do">
+      <div id="hour3" class="row time-block">
+        <div class="col-sm-1 hour">3pm</div>
+        <textarea class="col-sm-10 description"></textarea>
+        <button class="btn saveBtn col-sm-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="col-1">
-        <button class="saveBtn">Save</button>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-2 time-block hour">4pm</div>
-      <div class="col-9">
-        <input type="text" id="4" class="form-control"  placeholder="To do">
+      <div id="hour4" class="row time-block">
+        <div class="col-sm-1 hour">4pm</div>
+        <textarea class="col-sm-10 description"></textarea>
+        <button class="btn saveBtn col-sm-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="col-1">
-        <button class="saveBtn">Save</button>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="col-2 time-block hour">5pm</div>
-      <div class="col-9">
-        <input type="text" id="5" class="form-control"  placeholder="To do">
+      <div id="hour5" class="row time-block">
+        <div class="col-sm-1 hour">5pm</div>
+        <textarea class="col-sm-10 description"></textarea>
+        <button class="btn saveBtn col-sm-1">
+          <i class="fas fa-save"></i>
+        </button>
       </div>
-      <div class="col-1">
-        <button class="saveBtn">Save</button>
-      </div>
-    </div>
-
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
