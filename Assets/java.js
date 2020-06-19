@@ -2,6 +2,7 @@ $(document).ready(function () {
     // Setting the Current Time to display on the screen
     // includes Month, Day, Year, Hour, Minute, Seconds (running).
     currentTime();
+
     function currentTime() {
         var time = moment().format('MMMM Do YYYY, h:mm:ss a');
         $("#currentDay").html(time);
@@ -43,19 +44,23 @@ $(document).ready(function () {
         $(".time-block").each(function () {
             // Grabbing the id from the selected (this) element
             var hourEl = $(this).attr("id");
-            
-            var hourDay = hourEl.substring(hourEl.length);
+
+            // Changing the classes of the text areas of the time associated with it, based on the current time of day
+            var hourDay = hourEl.substring(5, hourEl.length);
             var intHourDay = parseInt(hourDay)
             var intCurrentHours = parseInt(currentHours);
             if (parseInt(intHourDay) < parseInt(intCurrentHours)) {
+                // console.log("test")
                 $(this).addClass("past");
                 $(this).removeClass("future");
                 $(this).removeClass("present");
             } else if (parseInt(intHourDay) > parseInt(intCurrentHours)) {
+                // console.log("test")
                 $(this).addClass("future");
                 $(this).removeClass("present");
                 $(this).removeClass("past");
             } else if (parseInt(intHourDay) === parseInt(intCurrentHours)) {
+                // console.log("test")
                 $(this).addClass("present");
                 $(this).removeClass("future");
                 $(this).removeClass("past");
